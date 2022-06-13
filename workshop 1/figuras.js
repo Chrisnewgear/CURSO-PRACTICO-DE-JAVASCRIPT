@@ -170,3 +170,31 @@ function calculaAreaCirculo (){
     const area = areaCirculo(value);
     alert(area);
 }
+
+//TRIANGULO ISOCELES
+function calculaAltura (){
+    const lado1 = document.getElementById("isocelesLado1");
+    const value1 = lado1.value;
+
+    const lado2 = document.getElementById("isocelesLado2");
+    const value2 = lado2.value;
+
+    const base = document.getElementById("baseIsoceles");
+    const value3 = base.value;
+    
+    Number(value1);
+    Number(value2);
+    Number(value3);
+
+    if (value1 != value2){
+        alert ("Los catetos deben medir lo mismo")
+    }else{
+        const altura = Math.sqrt(value1**2 - (value3**2 / 4));
+        if (altura >= 0){
+            alert("La altura del Triangulo Isóceles es: " + altura + "cm");
+        }else {
+            alert ("El triangulo no tiene altura");
+        }
+
+    }
+}

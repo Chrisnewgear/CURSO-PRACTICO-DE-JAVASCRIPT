@@ -51,6 +51,38 @@
             <button type="button" onclick="calculaPerimetroCirculo()">Calcular el perímetro</button>
             <button type="button" onclick="calculaAreaCirculo()">Calcular el área</button>
         </form>
+        <br><h2>Calcula el área y el perímetro de un triangulo</h2>
+        <form>
+            <label for="trianguloLado1">Escribe cuanto mide el primer lado de tu triangulo</label>
+            <input type="number" id="trianguloLado1">
+            <br>
+            <label for="trianguloLado2">Escribe cuanto mide el segundo lado de tu triangulo</label>
+            <input type="number" id="trianguloLado2">
+            <br>
+            <label for="baseTriangulo">Escribe cuanto mide la base de tu triangulo</label>
+            <input type="number" id="baseTriangulo">
+            <br>
+            <label for="alturaTriangulo">Escribe cuanto mide la altura de tu triangulo</label>
+            <input type="number" id="alturaTriangulo">
+            <br>
+            <button type="button" onclick="calculaPerimetroTriangulo()">Calcular el perímetro</button>
+            <button type="button" onclick="calculaAreaTriangulo()">Calcular el área</button>
+        </form>
+        <br>
+        <h2>Calcular la altura de un triangulo isoceles</h2>
+        <form>
+            <label for="isocelesLado1">Escribe cuanto mide el primer cateto</label>
+            <input type="number" id="isocelesLado1">
+            <br>
+            <label for="isocelesLado2">Escribe cuanto mide el segundo cateto</label>
+            <input type="number" id="isocelesLado2">
+            <br>
+            <label for="baseIsoceles">Escribe cuanto mide la base de tu triangulo</label>
+            <input type="number" id="baseIsoceles">
+            <br>
+            <br>
+            <button type="button" onclick="calculaAltura()">Calcular la altura</button>
+        </form>
     </section>
 
 </body>
